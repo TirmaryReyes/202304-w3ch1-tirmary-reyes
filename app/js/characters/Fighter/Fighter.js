@@ -1,4 +1,6 @@
-export class Fighter extends Character {
+import Character from "../Character/Character.js";
+
+class Fighter extends Character {
   weapon;
   dexterity;
 
@@ -24,3 +26,5 @@ export class Fighter extends Character {
     return dexterity;
   }
 }
+
+export default Fighter;

@@ -1,3 +1,8 @@
+import Advisor from "./Advisor/Advisor.js";
+import Squire from "./Squire/Squire.js";
+import King from "./King/King.js";
+import Fighter from "./Fighter/Fighter.js";
+
 const joffreyCharacterData = {
   name: "Joffrey",
   family: "Baratheon",
