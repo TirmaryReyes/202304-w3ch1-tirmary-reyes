@@ -1,3 +1,4 @@
+import CharacterCard from "../CharacterCard/CharacterCard.js";
 import Component from "../Component/Component.js";
 
 class CharacterList extends Component {
@@ -11,7 +12,9 @@ class CharacterList extends Component {
   }
 
   renderHtml() {
-    this.characters.forEach((character) => {});
+    this.characters.forEach(
+      (character) => new CharacterCard(this.element, character)
+    );
   }
 }
 
