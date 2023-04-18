@@ -13,7 +13,7 @@ class CharacterCard extends Component {
     this.element.innerHTML = `<div class="card character__card">
           <img src="img/${this.character.characterData.imageSource}" alt="Character's Name and family" class="character__picture card-img-top" />
           <div class="card-body">
-            <h2 class="character__name card-title h4">Name & family</h2>
+            <h2 class="character__name card-title h4">${this.character.characterData.name} ${this.character.characterData.family}</h2>
             <div class="character__info">
               <ul class="list-unstyled">
                 <li>Age: X yrs</li>
