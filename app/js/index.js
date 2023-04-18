@@ -1,1 +1,8 @@
-import Character from "./Character/Character.js";
+import characters from "./characters/characters.js";
+import CharacterList from "./components/CharacterList/CharacterList.js";
+import Component from "./components/Component/Component.js";
+
+const selector = document.querySelector(".app-container");
+
+const text = new Component(selector, "div", "hola");
+const characterList = new CharacterList(selector, characters);
